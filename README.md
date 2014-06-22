@@ -1,4 +1,4 @@
-Learning-Core-Audio-in-Swift
+Learning Core Audio in Swift
 ============================
 
 These are the code listings from the Learning Core Audio book, in Swift. I hope to illustrate how to call to low-level C APIs (such as Core Audio) from Swift,
