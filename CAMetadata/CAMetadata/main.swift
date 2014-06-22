@@ -30,12 +30,12 @@ let hint: AudioFileTypeID = 0
 
 theErr = AudioFileOpenURL(audioURL, Int8(kAudioFileReadPermission), hint, &audioFile)
 
-assert(theErr == OSStatus(noErr),  "theErr is not 0")
+assert(theErr == OSStatus(noErr))
 
 var outDataSize: UInt32 = 0
 var isWritable: UInt32 = 0
 theErr = AudioFileGetPropertyInfo(audioFile, UInt32(kAudioFilePropertyInfoDictionary), &outDataSize, &isWritable)
-assert(theErr == OSStatus(noErr),  "theErr is not 0")
+assert(theErr == OSStatus(noErr))
 
 var dictionary: CFDictionary? = nil
 // also: var dictionary: NSDictionary = NSDictionary.init()
